@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">Web studio</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 hidden>111111</h1>
+    <header class="header">
+      <div class="container flex-container">
+        <!-- Logo + navigation =========================== -->
+        <div>
+          <!-- logo -->
+          <div class="header-navigation-logo">
+            <a class="logo link" href="./index.html">
+              <span class="logo-1 link hover">web</span>
+              <span class="logo-2 link"> studio </span>
+            </a>
+          </div>
+
+          <!-- Меню навигации -->
+          <nav class="header-navigation">
+            <ul class="header-navigation-list list">
+              <li>
+                <a class="link hover focus" href="index.html">Студия</a>
+              </li>
+              <li class="active-page">
+                <a class="active-page link hover focus" href="portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="">
+                <a class="link hover focus" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- e-mail + tele =========================== -->
+        <div>
+          <!-- contacts -->
+          <div class="header-contacts">
+            <address class="header-address">
+              <ul class="header-address-list list">
+                <!-- e-mail -->
+                <li class="header-address-list-email">
+                  <a
+                    class="header-address-list-email-link link hover focus"
+                    href="mailto:"
+                    aria-label="e-mail icon"
+                  >
+                    <svg
+                      class="header-address-list-email-img img"
+                      width="16"
+                      height="11.2"
+                    >
+                      <use href="./images/sprite.svg#e-mail"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <!-- telephone -->
+                <li class="header-address-list-tel">
+                  <a
+                    class="header-address-list-tel-link link hover focus"
+                    href="tel:+380961111111"
+                    aria-label="telephone icon"
+                  >
+                    <svg
+                      class="header-address-list-tel-img img"
+                      width="10"
+                      height="14.94"
+                    >
+                      <use href="./images/sprite.svg#telephone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <a href="#"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- buttons section ====== Разделы сайта -->
+      <section class="buttons-section">
+        <div class="filter-list">
+          <h2 hidden>222222</h2>
+          <ul class="filter-list-item" style="list-style-type: none;">
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Все
+              </button>
+            </li>
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Веб-сайты
+              </button>
+            </li>
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Приложения
+              </button>
+            </li>
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Дизайн
+              </button>
+            </li>
+            <li>
+              <button class="filter-list-item-button hover focus">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- projects section -->
+      <section>
+        <div class="projects">
+          <ul class="projects-list list">
+            <!-- project-1 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="#">
+                <div class="projects-list-item-wraper">
+                  <img
+                    class="projects-list-item-img img"
+                    src="./images/projects/1.jpg"
+                    alt="Технокряк"
+                  />
+                  <p class="projects-list-item-overlay">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title link">Технокряк</h2>
+                  <p class="projects-list-item-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- project-2 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <div class="projects-list-item-wraper">
+                  <img
+                    class="projects-list-item-img img"
+                    src="./images/projects/2.jpg"
+                    alt="Постер"
+                  />
+                  <p class="projects-list-item-overlay">
+                    дывфтжтм щвтмжщывтмщ ывзывоми
+                  </p>
+                </div>
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title link">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="projects-list-item-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- project-3 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="#">
+                <div class="projects-list-item-wraper">
+                  <img
+                    class="projects-list-item-img img"
+                    src="./images/projects/3.jpg"
+                    alt="Seafood"
+                  />
+                  <p class="projects-list-item-overlay">333333333333333</p>
+                </div>
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">
+                    Ресторан Seafood
+                  </h2>
+                  <p class="projects-list-item-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- project-4 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <div class="projects-list-item-wraper">
+                  <img
+                    class="projects-list-item-img img"
+                    src="./images/projects/4.jpg"
+                    alt="Prime"
+                  />
+                  <p class="projects-list-item-overlay">44444444444444</p>
+                </div>
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">Проект Prime</h2>
+                  <p class="projects-list-item-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- project-5 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <div class="projects-list-item-wraper">
+                  <img
+                    class="projects-list-item-img img"
+                    src="./images/projects/5.jpg"
+                    alt="Boxes"
+                  />
+                  <p class="projects-list-item-overlay">55555555555555</p>
+                </div>
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">Проект Boxes</h2>
+                  <p class="projects-list-item-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- project-6 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <div class="projects-list-item-wraper">
+                  <img
+                    class="projects-list-item-img img"
+                    src="./images/projects/6.jpg"
+                    alt="Borders"
+                  />
+                  <p class="projects-list-item-overlay">66666666666</p>
+                </div>
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="projects-list-item-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- project-7 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <div class="projects-list-item-wraper">
+                  <img
+                    class="projects-list-item-img img"
+                    src="./images/projects/7.jpg"
+                    alt="Limited"
+                  />
+                  <p class="projects-list-item-overlay">77777777777777777</p>
+                </div>
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">
+                    Издание Limited Edition
+                  </h2>
+                  <p class="projects-list-item-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- project-8 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <div class="projects-list-item-wraper">
+                  <img
+                    class="projects-list-item-img img"
+                    src="./images/projects/8.jpg"
+                    alt="LAB"
+                  />
+                  <p class="projects-list-item-overlay">8888888888888*****</p>
+                </div>
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">Проект LAB</h2>
+                  <p class="projects-list-item-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <!-- project-9 -->
+            <li class="projects-list-item">
+              <a class="projects-list-item-link link" href="">
+                <div class="projects-list-item-wraper">
+                  <img
+                    class="projects-list-item-img img"
+                    src="./images/projects/9.jpg"
+                    alt="Business"
+                  />
+                  <p class="projects-list-item-overlay">9999999999999</p>
+                </div>
+                <div class="projects-list-item-description">
+                  <h2 class="projects-list-item-title">
+                    Growing Business
+                  </h2>
+                  <p class="projects-list-item-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER ============================================================= -->
+    <footer class="footer">
+      <div class="footer-contacts">
+        <div class="footer-logo">
+          <a class="footer-logo-link" href="./index.html">
+            <span class="logo-2-1 link hover">web</span>
+            <span class="logo-2-2 link"> studio </span>
+          </a>
+        </div>
+
+        <!-- footer-address -->
+        <address class="footer-contacts-address">
+          г. Киев, пр-т Леси Украинки, 26
+        </address>
+
+        <ul class="footer-contacts-address-list list">
+          <!-- footer-email -->
+          <li class="footer-contacts-email">
+            <a class="footer-contacts-email-link link" href="mailto:"
+              >info@devstudio.com</a
+            >
+          </li>
+          <!-- footer-tel -->
+          <li class="footer-contacts-tel">
+            <a class="footer-contacts-tel link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- foorter-connections -->
+      <div class="footer-connections">
+        <!-- foorter-connections-title -->
+        <p>Присоединяйтесь</p>
+
+        <!-- Connections socials -->
+        <ul class="footer-connections-socials list">
+          <!-- Instagram -->
+          <li class="footer-connections-socials">
+            <a
+              class="footer-connections-socials-link"
+              href="#"
+              aria-label="Instagram icon"
+            >
+              <svg class="footer-connections-socials-img">
+                <use href="./images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- twitter -->
+          <li class="footer-connections-socials">
+            <a
+              class="footer-connections-socials-link"
+              href="#"
+              aria-label="twitter icon"
+            >
+              <svg class="footer-connections-socials-img">
+                <use href="./images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- facebook -->
+          <li class="footer-connections-socials">
+            <a
+              class="footer-connections-socials-link"
+              href="#"
+              aria-label="facebook icon"
+            >
+              <svg class="footer-connections-socials-img">
+                <use href="./images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <!--  linkedin-->
+          <li class="footer-connections-socials">
+            <a
+              class="footer-connections-socials-link"
+              href="#"
+              aria-label="linkedin icon"
+            >
+              <svg class="footer-connections-socials-img">
+                <use href="./images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- subscription -->
+      <div class="footer-subscription">
+        <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
+        <input class="footer-connection-input" lang="en" type="text" />
+      </div>
+      <button class="footer-button-tosign">
+        <span>
+          Подписаться
+        </span>
+      </button>
+    </footer>
+  </body>
+</html>
