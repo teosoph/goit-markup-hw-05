@@ -29,6 +29,11 @@
   /* footer */
   --footer-conection-text-color: #ffffff;
   --footer-address-text-color: rgba(255, 255, 255, 0.6);
+
+  /* portfolio */
+  --portfolio-list-item-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+
   /* hover */
   --accent-color: #2196f3;
 
@@ -539,6 +544,10 @@ main {
   color: #ffffff;
 
   transition: all 0.9s linear;
+}
+
+.projects-list-item:hover {
+  box-shadow: var(--portfolio-list-item-shadow);
 }
 /* Footer ========================================*/
 footer {
