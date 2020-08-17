@@ -201,6 +201,9 @@ header .container {
   margin-right: 10px;
   transition: fill 250ms linear;
 }
+.header-address-list-item:hover {
+  color: var(--accent-color);
+}
 .header-address-list-item:hover .header-address-list-item-img {
   fill: var(--accent-color);
 }
@@ -484,8 +487,6 @@ main {
   margin-bottom: 30px;
 
   border: 1px solid #eeeeee;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .projects-list li:nth-child(3n) {
   margin-right: 0;
