@@ -42,7 +42,6 @@
             </ul>
           </nav>
         </div>
-
         <!-- e-mail + tele =========================== -->
         <div>
           <!-- contacts -->
@@ -50,14 +49,14 @@
             <address class="header-address">
               <ul class="header-address-list list">
                 <!-- e-mail -->
-                <li class="header-address-list-item">
+                <li class="header-address-list-email">
                   <a
-                    class="header-address-list-item-link link hover focus"
+                    class="header-address-list-email-link link hover focus"
                     href="mailto:"
                     aria-label="e-mail icon"
                   >
                     <svg
-                      class="header-address-list-item-img"
+                      class="header-address-list-email-img"
                       width="16"
                       height="11.2"
                     >
@@ -67,14 +66,14 @@
                   </a>
                 </li>
                 <!-- telephone -->
-                <li class="header-address-list-item">
+                <li class="header-address-list-tel">
                   <a
-                    class="header-address-list-item-link link hover focus"
+                    class="header-address-list-tel-link link hover focus"
                     href="tel:+380961111111"
                     aria-label="telephone icon"
                   >
                     <svg
-                      class="header-address-list-item-img"
+                      class="header-address-list-tel-img"
                       width="10"
                       height="14.94"
                     >
@@ -617,107 +616,109 @@
 
     <!-- FOOTER ============================================================= -->
     <footer class="footer">
-      <div class="footer-contacts">
-        <div class="footer-logo">
-          <a class="footer-logo-link" href="./index.html">
-            <span class="logo-2-1 link hover">web</span>
-            <span class="logo-2-2 link"> studio </span>
-          </a>
+      <div class="container">
+        <div class="footer-contacts">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="./index.html">
+              <span class="logo-2-1 link hover">web</span>
+              <span class="logo-2-2 link"> studio </span>
+            </a>
+          </div>
+
+          <!-- footer-address -->
+          <address class="footer-contacts-address">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
+
+          <ul class="footer-contacts-address-list list">
+            <!-- footer-email -->
+            <li class="footer-contacts-email">
+              <a class="footer-contacts-email-link link" href="mailto:"
+                >info@devstudio.com</a
+              >
+            </li>
+            <!-- footer-tel -->
+            <li class="footer-contacts-tel">
+              <a class="footer-contacts-tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </div>
 
-        <!-- footer-address -->
-        <address class="footer-contacts-address">
-          г. Киев, пр-т Леси Украинки, 26
-        </address>
+        <!-- foorter-connections =======================================-->
+        <div class="footer-connections">
+          <!-- foorter-connections-title -->
+          <p>Присоединяйтесь</p>
 
-        <ul class="footer-contacts-address-list list">
-          <!-- footer-email -->
-          <li class="footer-contacts-email">
-            <a class="footer-contacts-email-link link" href="mailto:"
-              >info@devstudio.com</a
-            >
-          </li>
-          <!-- footer-tel -->
-          <li class="footer-contacts-tel">
-            <a class="footer-contacts-tel link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <!-- foorter-connections =======================================-->
-      <div class="footer-connections">
-        <!-- foorter-connections-title -->
-        <p>Присоединяйтесь</p>
-
-        <!-- Connections socials ====================================-->
-        <ul class="footer-connections-socials list">
-          <!-- Instagram -->
-          <li class="footer-connections-socials">
-            <a
-              class="footer-connections-socials-link"
-              href="#"
-              aria-label="Instagram icon"
-            >
-              <svg
-                height="44"
-                width="44"
-                class="footer-connections-socials-img"
+          <!-- Connections socials ====================================-->
+          <ul class="footer-connections-socials list">
+            <!-- Instagram -->
+            <li class="footer-connections-socials">
+              <a
+                class="footer-connections-socials-link"
+                href="#"
+                aria-label="Instagram icon"
               >
-                <use href="./images/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <!-- twitter -->
-          <li class="footer-connections-socials">
-            <a
-              class="footer-connections-socials-link"
-              href="#"
-              aria-label="twitter icon"
-            >
-              <svg class="footer-connections-socials-img">
-                <use href="./images/sprite.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <!-- facebook -->
-          <li class="footer-connections-socials">
-            <a
-              class="footer-connections-socials-link"
-              href="#"
-              aria-label="facebook icon"
-            >
-              <svg class="footer-connections-socials-img">
-                <use href="./images/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <!--  linkedin-->
-          <li class="footer-connections-socials">
-            <a
-              class="footer-connections-socials-link"
-              href="#"
-              aria-label="linkedin icon"
-            >
-              <svg class="footer-connections-socials-img">
-                <use href="./images/sprite.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+                <svg
+                  height="44"
+                  width="44"
+                  class="footer-connections-socials-img"
+                >
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- twitter -->
+            <li class="footer-connections-socials">
+              <a
+                class="footer-connections-socials-link"
+                href="#"
+                aria-label="twitter icon"
+              >
+                <svg class="footer-connections-socials-img">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- facebook -->
+            <li class="footer-connections-socials">
+              <a
+                class="footer-connections-socials-link"
+                href="#"
+                aria-label="facebook icon"
+              >
+                <svg class="footer-connections-socials-img">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <!--  linkedin-->
+            <li class="footer-connections-socials">
+              <a
+                class="footer-connections-socials-link"
+                href="#"
+                aria-label="linkedin icon"
+              >
+                <svg class="footer-connections-socials-img">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <!-- subscription ===========================================-->
-      <div class="footer-subscription">
-        <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
-        <input class="footer-connection-input" lang="en" type="text" />
+        <!-- subscription ===========================================-->
+        <div class="footer-subscription">
+          <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
+          <input class="footer-connection-input" lang="en" type="text" />
+        </div>
+        <button class="footer-button-tosign">
+          <span>
+            Подписаться
+          </span>
+        </button>
       </div>
-      <button class="footer-button-tosign">
-        <span>
-          Подписаться
-        </span>
-      </button>
     </footer>
   </body>
 </html>
