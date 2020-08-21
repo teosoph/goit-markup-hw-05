@@ -448,15 +448,19 @@ main {
 
   border: 1px solid var(--clients-list-color);
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list a:hover {
   border: 1px solid var(--accent-color);
 }
-.clients-list a:hover .clients-list-item-img {
-  fill: var(--accent-color);
-}
 .clients-list-item-img {
   fill: var(--clients-list-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-list a:hover .clients-list-item-img {
+  fill: var(--accent-color);
 }
 
 /* Portfolio filter  ========================*/
