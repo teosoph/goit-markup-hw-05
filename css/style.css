@@ -498,6 +498,7 @@ main {
 .filter-list-item button:hover {
   background-color: var(--background-color);
   color: var(--accent-color);
+  box-shadow: var(--portfolio-list-item-shadow);
 }
 
 /* Portfolio Projects ============================*/
