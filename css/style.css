@@ -415,9 +415,9 @@ main {
 }
 .team-list-teammate-social-list-item-link-svg {
   fill: #afb1b8;
+  transition: fill 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-teammate-social-list-item a {
-  transition: color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-teammate-social-list-item a:hover {
@@ -476,7 +476,7 @@ main {
 .filter-list-item li:not(:last-child) {
   margin-right: 8px;
 }
-.filter-list-item-button {
+.filter-list-item button {
   font-family: var(--font);
   color: var(--font-color);
   font-weight: 500;
@@ -484,12 +484,20 @@ main {
   line-height: 26px;
   letter-spacing: 0.03em;
 
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 4px; */
 
   text-align: center;
   padding: 6px 22px 6px 22px;
+
+  transition: background-color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-list-item button:hover {
+  background-color: var(--background-color);
+  color: var(--accent-color);
 }
 
 /* Portfolio Projects ============================*/
@@ -590,8 +598,6 @@ footer .container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.footer-wraper {
 }
 
 .footer-logo {
