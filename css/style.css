@@ -320,7 +320,7 @@ main {
   line-height: 1.6;
 }
 
-/* doings ===================================*/
+/* doings list ===================================*/
 .title {
   font-weight: bold;
   font-size: 36px;
@@ -333,7 +333,6 @@ main {
 .doings-list {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 94px; */
 }
 .doings-list li {
   position: relative;
@@ -548,7 +547,6 @@ main {
   margin-bottom: 20px;
 }
 .projects-list-item:hover .projects-list-item-overlay {
-  /* opacity: 1; */
   top: 0;
 }
 .projects-list-item-wraper {
@@ -557,7 +555,6 @@ main {
   overflow: hidden;
 }
 .projects-list-item-overlay {
-  /* opacity: 0; */
   position: absolute;
   top: 100%;
   left: 0;
@@ -576,7 +573,7 @@ main {
   letter-spacing: 0.03em;
   color: #ffffff;
 
-  transition: all 0.9s linear;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list-item:hover {
@@ -715,6 +712,13 @@ footer .container {
 }
 
 /* Footer subscription ===================  */
+
+.footer-subscription-form {
+  display: flex;
+}
+.footer-contact-form-section {
+  padding: 0;
+}
 .footer-subscription input {
   width: 358px;
   height: 50px;
@@ -726,6 +730,7 @@ footer .container {
   border-radius: 4px;
 
   margin-right: 12px;
+  padding-left: 10px;
 }
 .footer-button-tosign {
   width: 200px;
@@ -742,12 +747,13 @@ footer .container {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 
   display: flex;
   align-items: center;
-  letter-spacing: 0.06em;
 
-  color: #ffffff;
+  padding-left: 10px;
 }
 .footer-button-tosign p {
   margin-right: 10px;
@@ -758,4 +764,7 @@ footer .container {
   background-image: url(../images/footer/icon-send.svg);
   width: 24px;
   height: 24px;
+  background-repeat: no-repeat;
+
+  margin-left: 10px;
 }

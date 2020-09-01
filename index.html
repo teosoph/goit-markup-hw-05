@@ -711,13 +711,26 @@
         <!-- subscription ===========================================-->
         <div class="footer-subscription">
           <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
-          <input class="footer-connection-input" lang="en" type="text" />
+
+          <form action="#" method="GET" class="footer-subscription-form">
+            <section class="footer-contact-form-section">
+              <input
+                class="footer-connection-input"
+                type="email"
+                lang="en"
+                name="user-email"
+                placeholder="Your email*"
+                required
+              />
+            </section>
+
+            <button class="footer-button-tosign">
+              <span>
+                Подписаться
+              </span>
+            </button>
+          </form>
         </div>
-        <button class="footer-button-tosign">
-          <span>
-            Подписаться
-          </span>
-        </button>
       </div>
     </footer>
   </body>
