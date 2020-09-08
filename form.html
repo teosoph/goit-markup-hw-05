@@ -5,15 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <form action="#">
-      Оставьте свои данные, мы вам перезвоним
-      <input type="text" class="contact-form-input" />
-      <input type="email" class="contact-form-input" />
-      <input type="tel" class="contact-form-input" />
-      <input type="comments" class="contact-form-input" />
+    <form action="#" method="GET" class="contact-form">
+      <p class="contact-form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+      <section class="contact-form-input-section">
+        <input
+          type="text"
+          class="contact-form-input"
+          name="user-name"
+          placeholder="Имя"
+          required
+          minlength="2"
+        />
+        <input
+          type="tel"
+          class="contact-form-input"
+          name="user-phone"
+          placeholder="Телефон"
+          required
+        />
+        <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" -->
+        <input
+          type="email"
+          class="contact-form-input"
+          name="user-email"
+          placeholder="Почта"
+          required
+        />
+        <input
+          type="comments"
+          class="contact-form-input"
+          name="user-comments"
+          placeholder="Комментарий"
+        />
+      </section>
+
+      <section class="contact-form-agreement-section">
+        <input
+          type="checkbox"
+          value="agree"
+          name="user-agreement"
+          id=""
+          class="contact-form-agreement-radio"
+        />
+
+        <p class="contact-form-agreement-title">
+          Соглашаюсь с рассылкой и принимаю
+          <span class="contact-form-agreement-license"> Условия договора </span>
+        </p>
+      </section>
+
       <button type="submit" class="contact-form-button">Отправить</button>
     </form>
   </body>
