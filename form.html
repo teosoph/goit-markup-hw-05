@@ -39,14 +39,16 @@
           placeholder="Почта"
           required
         />
-        <input
-          type="comments"
-          class="contact-form-input"
+
+        <textarea
+          class="contact-form-input contact-form-message"
           name="user-comments"
           placeholder="Комментарий"
-        />
+        >
+        </textarea>
       </section>
 
+      <!--Agreement section  ============================== -->
       <section class="contact-form-agreement-section">
         <input
           type="checkbox"
@@ -58,8 +60,10 @@
 
         <p class="contact-form-agreement-title">
           Соглашаюсь с рассылкой и принимаю
-          <span class="contact-form-agreement-license"> Условия договора </span>
         </p>
+        <a class="contact-form-agreement-license link hover focus" href="#"
+          >Условия договора</a
+        >
       </section>
 
       <button type="submit" class="contact-form-button">Отправить</button>
