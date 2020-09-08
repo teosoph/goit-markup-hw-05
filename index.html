@@ -100,7 +100,6 @@
           <h1 class="hero-title">
             Эффективные решения<br />для вашего бизнеса
           </h1>
-
           <button class="hero-button">Заказать услугу</button>
         </div>
       </section>
@@ -156,9 +155,7 @@
                   <use href="./images/sprite.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="merits-list-item-title">
-                Современные технологии
-              </h3>
+              <h3 class="merits-list-item-title">Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -180,9 +177,7 @@
             <!-- item 1 -->
             <li>
               <a class="link" href="#">
-                <h3>
-                  Десктопные приложения
-                </h3>
+                <h3>Десктопные приложения</h3>
               </a>
               <img
                 src="./images/main/section-3/box-1.jpg"
@@ -193,9 +188,7 @@
             <!-- item 2 -->
             <li>
               <a class="link" href="#">
-                <h3>
-                  Мобильные приложения
-                </h3>
+                <h3>Мобильные приложения</h3>
               </a>
               <img
                 src="./images/main/section-3/box-2.jpg"
@@ -206,9 +199,7 @@
             <!-- item 3 -->
             <li>
               <a class="link" href="#">
-                <h3>
-                  Дизайнерские решения
-                </h3>
+                <h3>Дизайнерские решения</h3>
               </a>
               <img
                 src="./images/main/section-3/box-3.jpg"
@@ -712,7 +703,7 @@
         <div class="footer-subscription">
           <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
 
-          <form action="#" method="GET" class="footer-subscription-form">
+          <form class="footer-subscription-form" action="#" method="GET">
             <section class="footer-contact-form-section">
               <input
                 class="footer-connection-input"
@@ -725,13 +716,25 @@
             </section>
 
             <button class="footer-button-tosign" type="submit">
-              <span>
-                Подписаться
-              </span>
+              <span> Подписаться </span>
             </button>
           </form>
         </div>
       </div>
     </footer>
+
+    <script>
+      (() => {
+        document
+          .querySelector(".footer-subscription-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+          });
+      })();
+    </script>
   </body>
 </html>
