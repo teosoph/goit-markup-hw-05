@@ -14,127 +14,103 @@
 
   <body>
     <h1 hidden>111111</h1>
-    <header class="header">
-      <div class="container flex-container">
-        <!-- Logo + navigation =========================== -->
-        <div>
-          <!-- logo -->
-          <div class="header-navigation-logo">
-            <a class="logo link" href="./index.html">
-              <span class="logo-1 link hover">web</span>
-              <span class="logo-2 link"> studio </span>
-            </a>
-          </div>
 
-          <!-- Меню навигации -->
-          <nav class="header-navigation">
-            <ul class="header-navigation-list list">
-              <li>
-                <a class="link hover focus" href="index.html">Студия</a>
-              </li>
-              <li class="active-page">
-                <a class="active-page link hover focus" href="portfolio.html"
-                  >Портфолио</a
+    <header>
+      <div class="container">
+        <!-- logo -->
+        <a class="logo link" href="./index.html" aria-label="Главная страница"
+          ><span class="logo-text link hover">Web</span> Studio</a
+        >
+
+        <!-- navigation -->
+        <nav class="header-navigation">
+          <ul class="header-navigation-list list">
+            <li>
+              <a class="link hover focus menu-underline" href="index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="active-page">
+              <a class="link hover focus current" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="">
+              <a class="link hover focus menu-underline" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contacts -->
+        <address class="header-address">
+          <ul class="header-address-list list">
+            <!-- e-mail -->
+            <li class="header-address-list-email">
+              <a
+                class="header-address-list-email-link link hover focus"
+                href="mailto:"
+                aria-label="e-mail icon"
+              >
+                <svg
+                  class="header-address-list-email-img"
+                  width="16"
+                  height="11.2"
                 >
-              </li>
-              <li class="">
-                <a class="link hover focus" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <!-- e-mail + tele =========================== -->
-        <div>
-          <!-- contacts -->
-          <div class="header-contacts">
-            <address class="header-address">
-              <ul class="header-address-list list">
-                <!-- e-mail -->
-                <li class="header-address-list-email">
-                  <a
-                    class="header-address-list-email-link link hover focus"
-                    href="mailto:"
-                    aria-label="e-mail icon"
-                  >
-                    <svg
-                      class="header-address-list-email-img img"
-                      width="16"
-                      height="11.2"
-                    >
-                      <use href="./images/sprite.svg#e-mail"></use>
-                    </svg>
-                    info@devstudio.com
-                  </a>
-                </li>
-                <!-- telephone -->
-                <li class="header-address-list-tel">
-                  <a
-                    class="header-address-list-tel-link link hover focus"
-                    href="tel:+380961111111"
-                    aria-label="telephone icon"
-                  >
-                    <svg
-                      class="header-address-list-tel-img img"
-                      width="10"
-                      height="14.94"
-                    >
-                      <use href="./images/sprite.svg#telephone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-            </address>
-            <a href="#"></a>
-          </div>
-        </div>
+                  <use href="./images/sprite.svg#e-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <!-- telephone -->
+            <li class="header-address-list-tel">
+              <a
+                class="header-address-list-tel-link link hover focus"
+                href="tel:+380961111111"
+                aria-label="telephone icon"
+              >
+                <svg
+                  class="header-address-list-tel-img"
+                  width="10"
+                  height="14.94"
+                >
+                  <use href="./images/sprite.svg#telephone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
     <main>
-      <!-- buttons section ====== Разделы сайта -->
-      <section class="buttons-section">
-        <div>
-          <h2 hidden>222222</h2>
-          <ul class="filter-list-item" style="list-style-type: none;">
+      <section>
+        <!-- buttons section ====== Разделы сайта -->
+        <div class="container buttons">
+          <ul class="buttons-filter list">
             <li>
-              <button>
-                Все
-              </button>
+              <button>Все</button>
             </li>
             <li>
-              <button>
-                Веб-сайты
-              </button>
+              <button>Веб-сайты</button>
             </li>
             <li>
-              <button>
-                Приложения
-              </button>
+              <button>Приложения</button>
             </li>
             <li>
-              <button>
-                Дизайн
-              </button>
+              <button>Дизайн</button>
             </li>
             <li>
-              <button>
-                Маркетинг
-              </button>
+              <button>Маркетинг</button>
             </li>
           </ul>
-        </div>
-      </section>
 
-      <!-- projects section -->
-      <section>
-        <div class="projects">
+          <!-- projects section -->
           <ul class="projects-list list">
             <!-- project-1 -->
             <li class="projects-list-item">
               <a class="projects-list-item-link link" href="#">
-                <div class="projects-list-item-wraper">
+                <div class="projects-list-item-link-wraper">
                   <img
                     class="projects-list-item-img img"
                     src="./images/projects/1.jpg"
@@ -156,14 +132,14 @@
             <!-- project-2 -->
             <li class="projects-list-item">
               <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
+                <div class="projects-list-item-link-wraper">
                   <img
                     class="projects-list-item-img img"
                     src="./images/projects/2.jpg"
                     alt="Постер"
                   />
                   <p class="projects-list-item-overlay">
-                    дывфтжтм щвтмжщывтмщ ывзывоми
+                    22222222222222222222222
                   </p>
                 </div>
                 <div class="projects-list-item-description">
@@ -178,7 +154,7 @@
             <!-- project-3 -->
             <li class="projects-list-item">
               <a class="projects-list-item-link link" href="#">
-                <div class="projects-list-item-wraper">
+                <div class="projects-list-item-link-wraper">
                   <img
                     class="projects-list-item-img img"
                     src="./images/projects/3.jpg"
@@ -187,9 +163,7 @@
                   <p class="projects-list-item-overlay">333333333333333</p>
                 </div>
                 <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title">
-                    Ресторан Seafood
-                  </h2>
+                  <h2 class="projects-list-item-title">Ресторан Seafood</h2>
                   <p class="projects-list-item-type">Приложение</p>
                 </div>
               </a>
@@ -198,7 +172,7 @@
             <!-- project-4 -->
             <li class="projects-list-item">
               <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
+                <div class="projects-list-item-link-wraper">
                   <img
                     class="projects-list-item-img img"
                     src="./images/projects/4.jpg"
@@ -216,7 +190,7 @@
             <!-- project-5 -->
             <li class="projects-list-item">
               <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
+                <div class="projects-list-item-link-wraper">
                   <img
                     class="projects-list-item-img img"
                     src="./images/projects/5.jpg"
@@ -234,7 +208,7 @@
             <!-- project-6 -->
             <li class="projects-list-item">
               <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
+                <div class="projects-list-item-link-wraper">
                   <img
                     class="projects-list-item-img img"
                     src="./images/projects/6.jpg"
@@ -254,7 +228,7 @@
             <!-- project-7 -->
             <li class="projects-list-item">
               <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
+                <div class="projects-list-item-link-wraper">
                   <img
                     class="projects-list-item-img img"
                     src="./images/projects/7.jpg"
@@ -274,7 +248,7 @@
             <!-- project-8 -->
             <li class="projects-list-item">
               <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
+                <div class="projects-list-item-link-wraper">
                   <img
                     class="projects-list-item-img img"
                     src="./images/projects/8.jpg"
@@ -292,7 +266,7 @@
             <!-- project-9 -->
             <li class="projects-list-item">
               <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
+                <div class="projects-list-item-link-wraper">
                   <img
                     class="projects-list-item-img img"
                     src="./images/projects/9.jpg"
@@ -301,9 +275,7 @@
                   <p class="projects-list-item-overlay">9999999999999</p>
                 </div>
                 <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title">
-                    Growing Business
-                  </h2>
+                  <h2 class="projects-list-item-title">Growing Business</h2>
                   <p class="projects-list-item-type">Приложение</p>
                 </div>
               </a>
@@ -314,31 +286,32 @@
     </main>
 
     <!-- FOOTER ============================================================= -->
-    <footer class="footer">
-      <div class="footer-wraper container flex-container">
-        <div class="footer-contacts">
-          <div class="footer-logo">
-            <a class="footer-logo-link" href="./index.html">
-              <span class="logo-2-1 link hover">web</span>
-              <span class="logo-2-2 link"> studio </span>
-            </a>
-          </div>
+    <footer>
+      <div class="container">
+        <!-- footer-contacts ========================================= -->
+        <div class="footer-logo-contacts">
+          <a
+            class="logo-link link"
+            href="./index.html"
+            aria-label="Главная страница"
+            ><span class="logo-2 link hover">Web</span> Studio</a
+          >
 
           <!-- footer-address -->
           <address class="footer-contacts-address">
             г. Киев, пр-т Леси Украинки, 26
           </address>
 
-          <ul class="footer-contacts-address-list list">
+          <ul class="footer-contacts-list list">
             <!-- footer-email -->
-            <li class="footer-contacts-email">
-              <a class="footer-contacts-email-link link" href="mailto:"
+            <li>
+              <a class="footer-contacts-list-email link" href="mailto:"
                 >info@devstudio.com</a
               >
             </li>
             <!-- footer-tel -->
-            <li class="footer-contacts-tel">
-              <a class="footer-contacts-tel link" href="tel:+380961111111"
+            <li>
+              <a class="footer-contacts-list-tel link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -353,25 +326,21 @@
           <!-- Connections socials ====================================-->
           <ul class="footer-connections-socials list">
             <!-- Instagram -->
-            <li class="footer-connections-socials">
+            <li class="footer-connections-socials-item">
               <a
-                class="footer-connections-socials-link"
+                class="footer-connections-socials-item-link"
                 href="#"
                 aria-label="Instagram icon"
               >
-                <svg
-                  height="44"
-                  width="44"
-                  class="footer-connections-socials-img"
-                >
+                <svg class="footer-connections-socials-img">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <!-- twitter -->
-            <li class="footer-connections-socials">
+            <li class="footer-connections-socials-item">
               <a
-                class="footer-connections-socials-link"
+                class="footer-connections-socials-item-link"
                 href="#"
                 aria-label="twitter icon"
               >
@@ -381,9 +350,9 @@
               </a>
             </li>
             <!-- facebook -->
-            <li class="footer-connections-socials">
+            <li class="footer-connections-socials-item">
               <a
-                class="footer-connections-socials-link"
+                class="footer-connections-socials-item-link"
                 href="#"
                 aria-label="facebook icon"
               >
@@ -393,9 +362,9 @@
               </a>
             </li>
             <!--  linkedin-->
-            <li class="footer-connections-socials">
+            <li class="footer-connections-socials-item">
               <a
-                class="footer-connections-socials-link"
+                class="footer-connections-socials-item-link"
                 href="#"
                 aria-label="linkedin icon"
               >
@@ -407,17 +376,29 @@
           </ul>
         </div>
 
-        <!-- subscription ===========================================-->
-        <div class="footer-subscription">
-          <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
-          <input class="footer-connection-input" lang="en" type="text" />
+        <!-- Footer subscription ===========================================-->
+        <div hidden class="footer-subscription">
+          <p class="footer-subscription-title">Подпишитесь на рассылку</p>
+
+          <form class="footer-subscription-form" action="#" method="GET">
+            <section class="footer-contact-form-section">
+              <input
+                class="footer-connection-input"
+                type="email"
+                lang="en"
+                name="user-email"
+                placeholder="Your email*"
+                required
+              />
+            </section>
+
+            <button class="footer-button-tosign" type="submit">
+              <span> Подписаться </span>
+            </button>
+          </form>
         </div>
-        <button class="footer-button-tosign">
-          <span>
-            Подписаться
-          </span>
-        </button>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

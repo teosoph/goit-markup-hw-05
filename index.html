@@ -14,97 +14,86 @@
 
   <!-- BODY  ==================================================================-->
   <body>
-    <header class="header">
-      <div class="container flex-container">
-        <!-- Logo + navigation =========================== -->
-        <div>
-          <!-- logo -->
-          <div class="header-navigation-logo">
-            <a class="logo link" href="./index.html">
-              <span class="logo-1 link hover">web</span>
-              <span class="logo-2 link"> studio </span>
-            </a>
-          </div>
+    <header>
+      <div class="container">
+        <!-- logo -->
+        <a class="logo link" href="./index.html" aria-label="Главная страница"
+          ><span class="logo-text link hover">Web</span> Studio</a
+        >
 
-          <!-- Меню навигации -->
+        <!-- navigation -->
+        <nav class="header-navigation">
+          <ul class="header-navigation-list list">
+            <li class="active-page">
+              <a class="link hover focus current" href="index.html">Студия</a>
+            </li>
+            <li>
+              <a class="link hover focus menu-underline" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="">
+              <a class="link hover focus menu-underline" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-          <nav class="header-navigation">
-            <ul class="header-navigation-list list">
-              <li class="active-page">
-                <a class="link hover focus" href="index.html">Студия</a>
-              </li>
-              <li>
-                <a class="link hover focus" href="portfolio.html">Портфолио</a>
-              </li>
-              <li class="">
-                <a class="link hover focus" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- e-mail + tele =========================== -->
-        <div>
-          <!-- contacts -->
-          <div class="header-contacts">
-            <address class="header-address">
-              <ul class="header-address-list list">
-                <!-- e-mail -->
-                <li class="header-address-list-email">
-                  <a
-                    class="header-address-list-email-link link hover focus"
-                    href="mailto:"
-                    aria-label="e-mail icon"
-                  >
-                    <svg
-                      class="header-address-list-email-img"
-                      width="16"
-                      height="11.2"
-                    >
-                      <use href="./images/sprite.svg#e-mail"></use>
-                    </svg>
-                    info@devstudio.com
-                  </a>
-                </li>
-                <!-- telephone -->
-                <li class="header-address-list-tel">
-                  <a
-                    class="header-address-list-tel-link link hover focus"
-                    href="tel:+380961111111"
-                    aria-label="telephone icon"
-                  >
-                    <svg
-                      class="header-address-list-tel-img"
-                      width="10"
-                      height="14.94"
-                    >
-                      <use href="./images/sprite.svg#telephone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-            </address>
-
-            <a href=""></a>
-          </div>
-        </div>
+        <!-- contacts -->
+        <address class="header-address">
+          <ul class="header-address-list list">
+            <!-- e-mail -->
+            <li class="header-address-list-email">
+              <a
+                class="header-address-list-email-link link hover focus"
+                href="mailto:"
+                aria-label="e-mail icon"
+              >
+                <svg
+                  class="header-address-list-email-img"
+                  width="16"
+                  height="11.2"
+                >
+                  <use href="./images/sprite.svg#e-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <!-- telephone -->
+            <li class="header-address-list-tel">
+              <a
+                class="header-address-list-tel-link link hover focus"
+                href="tel:+380961111111"
+                aria-label="telephone icon"
+              >
+                <svg
+                  class="header-address-list-tel-img"
+                  width="10"
+                  height="14.94"
+                >
+                  <use href="./images/sprite.svg#telephone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
     <!-- MAIN ================================================================== -->
     <main>
-      <!--  Section 1 ==================================================================== -->
+      <!--  Section 1 ================================================== -->
       <!-- HERO -->
       <section class="hero">
         <div class="hero-slider">
           <h1 class="hero-title">
             Эффективные решения<br />для вашего бизнеса
           </h1>
-          <button class="hero-button">Заказать услугу</button>
+          <button data-modal-open class="hero-button">Заказать услугу</button>
         </div>
       </section>
 
-      <!-- Section 2 =============================================================-->
+      <!-- Section 2 =====================================================-->
       <!-- merits -->
       <section class="merits">
         <div class="container">
@@ -176,36 +165,33 @@
           <ul class="doings-list list">
             <!-- item 1 -->
             <li>
-              <a class="link" href="#">
-                <h3>Десктопные приложения</h3>
-              </a>
               <img
+                width="370"
                 src="./images/main/section-3/box-1.jpg"
                 alt="Десктопные приложения"
               />
             </li>
+            <!-- <h3>Десктопные приложения</h3> -->
 
             <!-- item 2 -->
             <li>
-              <a class="link" href="#">
-                <h3>Мобильные приложения</h3>
-              </a>
               <img
+                width="370"
                 src="./images/main/section-3/box-2.jpg"
                 alt="Мобильные приложения"
               />
             </li>
+            <!-- <h3>Мобильные приложения</h3> -->
 
             <!-- item 3 -->
             <li>
-              <a class="link" href="#">
-                <h3>Дизайнерские решения</h3>
-              </a>
               <img
+                width="370"
                 src="./images/main/section-3/box-3.jpg"
                 alt="Дизайнерские решения"
               />
             </li>
+            <!-- <h3>Дизайнерские решения</h3> -->
           </ul>
         </div>
       </section>
@@ -214,13 +200,16 @@
       <!-- TEAM -->
       <section class="team">
         <div class="container">
+          <!-- Title -->
           <h2 class="title">Наша команда</h2>
+
+          <!-- Team list -->
           <ul class="team-list list">
             <!-- teammate 1 -->
             <li class="team-list-teammate">
               <img
                 class="team-list-teammate-img"
-                src="./images/main/section-4/member-1.jpg"
+                src="./images/main/section-4/img-1.jpg"
                 alt="Николай Кучеренко"
               />
               <h3>Николай Кучеренко</h3>
@@ -233,11 +222,7 @@
                     href="#"
                     aria-label="Instagram icon"
                   >
-                    <svg
-                      class="team-list-teammate-social-list-item-link-svg"
-                      width="44"
-                      height="44"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#instagram"></use>
                     </svg>
                   </a>
@@ -249,11 +234,7 @@
                     href="#"
                     aria-label="twitter icon"
                   >
-                    <svg
-                      class="team-list-teammate-social-list-item-link-svg"
-                      width="44"
-                      height="44"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
@@ -265,11 +246,7 @@
                     href="#"
                     aria-label="facebook icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
@@ -281,11 +258,7 @@
                     href="#"
                     aria-label="linkedin icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -297,7 +270,7 @@
             <li class="team-list-teammate">
               <img
                 class="team-list-teammate-img"
-                src="./images/main/section-4/member-2.jpg"
+                src="./images/main/section-4/img-2.jpg"
                 alt="Ольга Иванова"
               />
               <h3>Ольга Иванова</h3>
@@ -310,11 +283,7 @@
                     href="#"
                     aria-label="Instagram icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#instagram"></use>
                     </svg>
                   </a>
@@ -326,11 +295,7 @@
                     href="#"
                     aria-label="twitter icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
@@ -342,11 +307,7 @@
                     href="#"
                     aria-label="facebook icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
@@ -358,11 +319,7 @@
                     href="#"
                     aria-label="linkedin icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -374,7 +331,7 @@
             <li class="team-list-teammate">
               <img
                 class="team-list-teammate-img"
-                src="./images/main/section-4/member-3.jpg"
+                src="./images/main/section-4/img-3.jpg"
                 alt=""
               />
               <h3>Андрей Шевченко</h3>
@@ -387,11 +344,7 @@
                     href="#"
                     aria-label="Instagram icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#instagram"></use>
                     </svg>
                   </a>
@@ -403,11 +356,7 @@
                     href="#"
                     aria-label="twitter icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
@@ -419,11 +368,7 @@
                     href="#"
                     aria-label="facebook icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
@@ -435,11 +380,7 @@
                     href="#"
                     aria-label="linkedin icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -452,7 +393,7 @@
             <li class="team-list-teammate">
               <img
                 class="team-list-teammate-img"
-                src="./images/main/section-4/member-4.jpg"
+                src="./images/main/section-4/img-4.jpg"
                 alt=""
               />
               <h3>Иван Николаев</h3>
@@ -465,11 +406,7 @@
                     href="#"
                     aria-label="Instagram icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#instagram"></use>
                     </svg>
                   </a>
@@ -481,11 +418,7 @@
                     href="#"
                     aria-label="twitter icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#twitter"></use>
                     </svg>
                   </a>
@@ -497,11 +430,7 @@
                     href="#"
                     aria-label="facebook icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#facebook"></use>
                     </svg>
                   </a>
@@ -513,11 +442,7 @@
                     href="#"
                     aria-label="linkedin icon"
                   >
-                    <svg
-                      width="44"
-                      height="44"
-                      class="team-list-teammate-social-list-item-link-svg"
-                    >
+                    <svg class="team-list-teammate-social-list-item-link-svg">
                       <use href="./images/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
@@ -541,7 +466,7 @@
             <li>
               <a class="clients-list-item" href="#" aria-label="Client-1">
                 <svg class="clients-list-item-img img" width="44" height="49">
-                  <use href="./images/sprite.svg#client-1"></use>
+                  <use href="./images/sprite.svg#client-2"></use>
                 </svg>
               </a>
             </li>
@@ -550,7 +475,7 @@
             <li>
               <a class="clients-list-item" href="#" aria-label="Client-2">
                 <svg class="clients-list-item-img img" width="40" height="52">
-                  <use href="./images/sprite.svg#client-2"></use>
+                  <use href="./images/sprite.svg#client-3"></use>
                 </svg>
               </a>
             </li>
@@ -560,7 +485,7 @@
             <li>
               <a class="clients-list-item" href="#" aria-label="Client-3">
                 <svg class="clients-list-item-img img" width="41" height="42.6">
-                  <use href="./images/sprite.svg#client-3"></use>
+                  <use href="./images/sprite.svg#client-4"></use>
                 </svg>
               </a>
             </li>
@@ -574,7 +499,7 @@
                   width="79.66"
                   height="42.02"
                 >
-                  <use href="./images/sprite.svg#client-4"></use>
+                  <use href="./images/sprite.svg#client-5"></use>
                 </svg>
               </a>
             </li>
@@ -582,7 +507,7 @@
             <li>
               <a class="clients-list-item" href="#" aria-label="Client-5">
                 <svg class="clients-list-item-img img" width="59" height="47">
-                  <use href="./images/sprite.svg#client-5"></use>
+                  <use href="./images/sprite.svg#client-6"></use>
                 </svg>
               </a>
             </li>
@@ -596,7 +521,7 @@
                   width="88.48"
                   height="45.44"
                 >
-                  <use href="./images/sprite.svg#client-6"></use>
+                  <use href="./images/sprite.svg#client-1"></use>
                 </svg>
               </a>
             </li>
@@ -606,31 +531,32 @@
     </main>
 
     <!-- FOOTER ============================================================= -->
-    <footer class="footer">
+    <footer>
       <div class="container">
-        <div class="footer-contacts">
-          <div class="footer-logo">
-            <a class="footer-logo-link" href="./index.html">
-              <span class="logo-2-1 link hover">web</span>
-              <span class="logo-2-2 link"> studio </span>
-            </a>
-          </div>
+        <!-- footer-contacts ========================================= -->
+        <div class="footer-logo-contacts">
+          <a
+            class="logo-link link"
+            href="./index.html"
+            aria-label="Главная страница"
+            ><span class="logo-2 link hover">Web</span> Studio</a
+          >
 
           <!-- footer-address -->
           <address class="footer-contacts-address">
             г. Киев, пр-т Леси Украинки, 26
           </address>
 
-          <ul class="footer-contacts-address-list list">
+          <ul class="footer-contacts-list list">
             <!-- footer-email -->
-            <li class="footer-contacts-email">
-              <a class="footer-contacts-email-link link" href="mailto:"
+            <li>
+              <a class="footer-contacts-list-email link" href="mailto:"
                 >info@devstudio.com</a
               >
             </li>
             <!-- footer-tel -->
-            <li class="footer-contacts-tel">
-              <a class="footer-contacts-tel link" href="tel:+380961111111"
+            <li>
+              <a class="footer-contacts-list-tel link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -645,25 +571,21 @@
           <!-- Connections socials ====================================-->
           <ul class="footer-connections-socials list">
             <!-- Instagram -->
-            <li class="footer-connections-socials">
+            <li class="footer-connections-socials-item">
               <a
-                class="footer-connections-socials-link"
+                class="footer-connections-socials-item-link"
                 href="#"
                 aria-label="Instagram icon"
               >
-                <svg
-                  height="44"
-                  width="44"
-                  class="footer-connections-socials-img"
-                >
+                <svg class="footer-connections-socials-img">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <!-- twitter -->
-            <li class="footer-connections-socials">
+            <li class="footer-connections-socials-item">
               <a
-                class="footer-connections-socials-link"
+                class="footer-connections-socials-item-link"
                 href="#"
                 aria-label="twitter icon"
               >
@@ -673,9 +595,9 @@
               </a>
             </li>
             <!-- facebook -->
-            <li class="footer-connections-socials">
+            <li class="footer-connections-socials-item">
               <a
-                class="footer-connections-socials-link"
+                class="footer-connections-socials-item-link"
                 href="#"
                 aria-label="facebook icon"
               >
@@ -685,9 +607,9 @@
               </a>
             </li>
             <!--  linkedin-->
-            <li class="footer-connections-socials">
+            <li class="footer-connections-socials-item">
               <a
-                class="footer-connections-socials-link"
+                class="footer-connections-socials-item-link"
                 href="#"
                 aria-label="linkedin icon"
               >
@@ -700,7 +622,7 @@
         </div>
 
         <!-- subscription ===========================================-->
-        <div class="footer-subscription">
+        <div hidden class="footer-subscription">
           <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
 
           <form class="footer-subscription-form" action="#" method="GET">
@@ -723,18 +645,75 @@
       </div>
     </footer>
 
-    <script>
-      (() => {
-        document
-          .querySelector(".footer-subscription-form")
-          .addEventListener("submit", (e) => {
-            e.preventDefault();
+    <div class="backdrop is-hidden">
+      <div class="modal">modal</div>
+    </div>
 
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-          });
-      })();
-    </script>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn-close" data-modal-close>X</button>
+        <form action="#" method="GET" class="contact-form">
+          <p class="contact-form-title">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+
+          <section class="contact-form-input-section">
+            <input
+              type="text"
+              class="contact-form-input"
+              name="user-name"
+              placeholder="Имя"
+              required
+              minlength="2"
+            />
+            <input
+              type="tel"
+              class="contact-form-input"
+              name="user-phone"
+              placeholder="Телефон"
+              required
+            />
+            <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" -->
+            <input
+              type="email"
+              class="contact-form-input"
+              name="user-email"
+              placeholder="Почта"
+              required
+            />
+
+            <textarea
+              class="contact-form-input contact-form-message"
+              name="user-comments"
+              placeholder="Комментарий"
+            >
+            </textarea>
+          </section>
+
+          <!--Agreement section  ============================== -->
+          <section class="contact-form-agreement-section">
+            <input
+              type="checkbox"
+              value="agree"
+              name="user-agreement"
+              id=""
+              class="contact-form-agreement-radio"
+            />
+
+            <p class="contact-form-agreement-title">
+              Соглашаюсь с рассылкой и принимаю
+            </p>
+            <a class="contact-form-agreement-license link hover focus" href="#"
+              >Условия договора</a
+            >
+          </section>
+
+          <button type="submit" class="contact-form-button">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <!-- Modal script -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
